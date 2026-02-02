@@ -1,0 +1,55 @@
+GET http://localhost:3000/api/items
+
+###
+
+POST http://localhost:3000/api/items
+Content-Type: application/json
+x-api-key: apikey
+
+{
+  "name": "Pen",
+  "price": 300
+}
+
+###
+
+GET http://localhost:3000/api/items/**
+
+###
+
+PUT http://localhost:3000/api/items/**
+Content-Type: application/json
+x-api-key: apikey
+
+{
+  "name": "Blue Pen",
+  "price": 350
+}
+
+
+###
+
+PATCH http://localhost:3000/api/items/**
+Content-Type: application/json
+x-api-key: apikey
+
+{
+  "price": 400
+}
+
+
+###
+
+DELETE http://localhost:3000/api/items/**
+x-api-key: apikey
+
+
+###
+
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+  "name": "Hack",
+  "price": 1
+}
